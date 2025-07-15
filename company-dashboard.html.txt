@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Dashboard</title>
+</head>
+<body>
+  <h1>Create New Event</h1>
+
+  <input type="text" id="title" placeholder="Event Title"><br><br>
+  <textarea id="description" placeholder="Event Description"></textarea><br><br>
+  <input type="date" id="date"><br><br>
+  <input type="text" id="location" placeholder="Location"><br><br>
+  <input type="number" id="budget" placeholder="Promoter Pay (₹)"><br><br>
+  <button onclick="createEvent()">Post Event</button>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<h2>Your Posted Events & Applicants</h2>
+<div id="myEvents"></div>
